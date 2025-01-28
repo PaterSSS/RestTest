@@ -16,7 +16,8 @@ import java.util.List;
 @RequestMapping("/api/cats")
 @Slf4j
 public class MainController {
-    private CatRepo catRepo;
+    private final
+    CatRepo catRepo;
 
     @Autowired
     public MainController(CatRepo catRepo) {
